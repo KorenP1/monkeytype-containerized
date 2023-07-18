@@ -1,6 +1,7 @@
 # MonkeyType Offline
 
-Components: Frontend, Backend, MongoDB, Redis
+### Components
+Frontend, Backend, MongoDB, Redis
 
 <br />
 <br />
@@ -23,4 +24,4 @@ Redis: Volume at /data (Optional)
 <br />
 <br />
 
-Dockerhub: https://hub.docker.com/r/korenp/monkeytype
+DockerHub: https://hub.docker.com/r/korenp/monkeytype
