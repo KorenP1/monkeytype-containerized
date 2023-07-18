@@ -16,5 +16,6 @@ COPY --from=0 /monkeytype/backend/.env .env
 COPY --from=0 /monkeytype/backend/build build
 RUN npm install && npm fund && rm -rf /tmp/npm-cache/*
 ENV TZ Israel
+EXPOSE 5005
 ENTRYPOINT []
 CMD ["node", "build/server.js"]
