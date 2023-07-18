@@ -20,7 +20,7 @@ Redis: `docker run -d -p 6379:6379 redis`
 
 ### Configure
 Frontend: :) \
-Backend: Please configuire .env file \
+Backend: Configure .env file \
 MongoDB: Volume at /data/MongoDB (Optional) \
 Redis: Volume at /data (Optional)
 
