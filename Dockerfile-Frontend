@@ -1,0 +1,16 @@
+FROM node:slim
+WORKDIR /monkeytype
+COPY . .
+RUN mv frontend/src/ts/constants/firebase-config-example.ts frontend/src/ts/constants/firebase-config.ts
+RUN npm install -g npm@8.1.2
+RUN npm run install-all
+RUN cd frontend && npm run build
+
+FROM node:slim
+WORKDIR /monkeytype
+RUN npm install serve
+RUN npm config set cache -g /tmp/npm-cache
+COPY --from=0 /monkeytype/frontend/public public
+ENV TZ Israel
+ENTRYPOINT []
+CMD ["npx", "serve", "public"]
