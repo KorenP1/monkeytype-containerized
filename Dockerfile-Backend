@@ -1,0 +1,20 @@
+FROM node:slim
+WORKDIR /monkeytype
+COPY . .
+RUN npm install -g npm@8.1.2
+RUN npm run install-all
+RUN cd backend && npm install @types/node
+RUN mv backend/example.env backend/.env
+RUN cd backend && npm run build
+
+FROM node:slim
+WORKDIR /monkeytype
+RUN npm config set cache -g /tmp/npm-cache
+COPY --from=0 /monkeytype/backend/package.json .
+COPY --from=0 /monkeytype/backend/package-lock.json .
+COPY --from=0 /monkeytype/backend/.env .env
+COPY --from=0 /monkeytype/backend/build build
+RUN npm install && npm fund && rm -rf /tmp/npm-cache/*
+ENV TZ Israel
+ENTRYPOINT []
+CMD ["node", "build/server.js"]
