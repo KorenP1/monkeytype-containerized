@@ -16,6 +16,7 @@ COPY --from=0 /monkeytype/backend/redis-scripts .
 COPY --from=0 /monkeytype/backend/.env .env
 COPY --from=0 /monkeytype/backend/build build
 RUN npm install && npm fund && rm -rf /tmp/npm-cache/*
+RUN mkdir logs && chmod 777 logs
 ENV TZ Israel
 EXPOSE 5005
 ENTRYPOINT []
