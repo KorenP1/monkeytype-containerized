@@ -1,13 +1,15 @@
-## MonkeyType Dockerfiles :)
+# MonkeyType Dockerfiles :)
 
-#Components: \
-Frontend \
-Backend \
-MongoDB \
-Redis
+Components: \
+Frontend, Backend, MongoDB, Redis
 
-Frontend:
-:)
+<br />
+<br />
 
-Backend:
-Please configuire .env file
+Frontend: :)
+
+Backend: Please configuire .env file
+
+MongoDB: Volume at /data/MongoDB
+
+Redis: Volume at /data
