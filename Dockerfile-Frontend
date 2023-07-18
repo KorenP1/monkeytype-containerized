@@ -12,5 +12,6 @@ RUN npm install serve
 RUN npm config set cache -g /tmp/npm-cache
 COPY --from=0 /monkeytype/frontend/public public
 ENV TZ Israel
+EXPOSE 3000
 ENTRYPOINT []
 CMD ["npx", "serve", "public"]
