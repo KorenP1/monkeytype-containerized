@@ -1,7 +1,10 @@
 # MonkeyType Offline
 
 ### Components
-Frontend, Backend, MongoDB, Redis
+Frontend \
+Backend \
+MongoDB \
+Redis
 
 <br />
 <br />
