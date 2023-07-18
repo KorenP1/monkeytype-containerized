@@ -1,4 +1,10 @@
-# MonkeyType Dockerfiles :)
+## MonkeyType Dockerfiles :)
+
+#Components: \
+Frontend \
+Backend \
+MongoDB \
+Redis
 
 Frontend:
 :)
