@@ -10,9 +10,9 @@ Frontend: :)
 
 Backend: Please configuire .env file
 
-MongoDB: Volume at /data/MongoDB
+MongoDB: Volume at /data/MongoDB (Optional)
 
-Redis: Volume at /data
+Redis: Volume at /data (Optional)
 
 <br />
 <br />
