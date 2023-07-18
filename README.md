@@ -1,4 +1,4 @@
-# MonkeyType Dockerfiles :)
+# MonkeyType Offline
 
 Components: \
 Frontend, Backend, MongoDB, Redis
