@@ -22,7 +22,7 @@ Firebase: `docker run -d -e GCP_PROJECT=monkeytype -p 9000:9000 -p 8080:8080 -p 
 
 ### Configure
 Frontend: Configure firebase-config.js \
-Backend: Configure .env file \
+Backend: Configure .env file && Configure firebase ServiceAccount at /src/credentials/serviceAccountKey.json \
 MongoDB: Volume at /data/MongoDB (Optional) \
 Redis: Volume at /data (Optional) \
 Firebase: :)
