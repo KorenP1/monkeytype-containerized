@@ -1,4 +1,4 @@
-# MonkeyType Offline
+# MonkeyType
 
 For air gapped environments only the frontend will work sorry :)
 
