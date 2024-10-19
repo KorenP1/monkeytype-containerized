@@ -1,5 +1,7 @@
 # MonkeyType Offline
 
+For air gapped environments only the frontend will work sorry :)
+
 ### Components
 Frontend \
 Backend \
